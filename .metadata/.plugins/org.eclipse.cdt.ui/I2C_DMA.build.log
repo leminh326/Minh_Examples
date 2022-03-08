@@ -1,0 +1,10 @@
+08:19:56 **** Incremental Build of configuration Debug for project I2C_DMA ****
+make -j4 all 
+arm-none-eabi-size   I2C_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27628	    128	   2188	  29944	   74f8	I2C_DMA.elf
+Finished building: default.size.stdout
+ 
+
+08:19:57 Build Finished. 0 errors, 0 warnings. (took 605ms)
+

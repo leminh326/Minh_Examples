@@ -1,0 +1,48 @@
+22:25:14 **** Incremental Build of configuration Debug for project I2C_Lexibook_test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Lexibook_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\lemin\STM32CubeIDE\Minh_Examples\I2C_Lexibook_test\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Lexibook_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Lexibook_test.elf
+ 
+arm-none-eabi-objdump -h -S  I2C_Lexibook_test.elf  > "I2C_Lexibook_test.list"
+arm-none-eabi-objcopy  -O ihex  I2C_Lexibook_test.elf  "I2C_Lexibook_test.hex"
+arm-none-eabi-objcopy  -O binary  I2C_Lexibook_test.elf  "I2C_Lexibook_test.bin"
+arm-none-eabi-size   I2C_Lexibook_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27444	    120	   2388	  29952	   7500	I2C_Lexibook_test.elf
+Finished building: default.size.stdout
+Finished building: I2C_Lexibook_test.hex
+ 
+Finished building: I2C_Lexibook_test.bin
+ 
+ 
+Finished building: I2C_Lexibook_test.list
+ 
+08:33:06 **** Incremental Build of configuration Debug for project UART_Polling ****
+make -j4 all 
+arm-none-eabi-size   UART_Polling.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18556	    120	   1724	  20400	   4fb0	UART_Polling.elf
+Finished building: default.size.stdout
+ 
+09:27:27 **** Incremental Build of configuration Debug for project UART_Polling ****
+make -j4 all 
+arm-none-eabi-size   UART_Polling.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18556	    120	   1724	  20400	   4fb0	UART_Polling.elf
+Finished building: default.size.stdout
+ 
+11:13:11 **** Incremental Build of configuration Debug for project UART_Polling ****
+make -j4 all 
+arm-none-eabi-size   UART_Polling.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18556	    120	   1724	  20400	   4fb0	UART_Polling.elf
+Finished building: default.size.stdout
+ 
+11:33:08 **** Incremental Build of configuration Debug for project UART_Polling ****
+make -j4 all 
+arm-none-eabi-size   UART_Polling.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18556	    120	   1724	  20400	   4fb0	UART_Polling.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,13 @@
+16:29:32 **** Incremental Build of configuration Debug for project I2C_TwoBoards_ComPolling ****
+make -j4 all 
+arm-none-eabi-size   I2C_TwoBoards_ComPolling.elf 
+arm-none-eabi-objcopy  -O ihex  I2C_TwoBoards_ComPolling.elf  "I2C_TwoBoards_ComPolling.hex"
+   text	   data	    bss	    dec	    hex	filename
+  19348	    120	   2004	  21472	   53e0	I2C_TwoBoards_ComPolling.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_TwoBoards_ComPolling.hex
+ 
+
+16:29:33 Build Finished. 0 errors, 0 warnings. (took 863ms)
+
